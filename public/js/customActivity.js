@@ -19,6 +19,8 @@ define(['postmonger'], function (Postmonger) {
         connection.trigger('ready');
         connection.trigger('requestTokens');
         connection.trigger('requestEndpoints');
+
+        console.log('On Render is called')
     }
 
     /**

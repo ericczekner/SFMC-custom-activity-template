@@ -10,6 +10,7 @@ let axios = require("axios");
 // Global Variables
 const tokenURL = `${process.env.authenticationUrl}/v2/token`;
 
+console.log('Token URL ', tokenURL)
 exports.logExecuteData = [];
 function logData(req) {
     exports.logExecuteData.push({
@@ -139,6 +140,7 @@ function retrieveToken () {
         client_secret: process.env.clientSecret
     })
     .then(function (response) {
+        console.log("Access token retrieved: ", response.data)
         return response.data['access_token'];
     }).catch(function (error) {
         return error;
