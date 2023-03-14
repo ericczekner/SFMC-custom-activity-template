@@ -10,7 +10,6 @@ let axios = require("axios");
 // Global Variables
 const tokenURL = `${process.env.authenticationUrl}/v2/token`;
 
-
 exports.logExecuteData = [];
 function logData(req) {
     exports.logExecuteData.push({
