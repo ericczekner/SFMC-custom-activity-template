@@ -50,13 +50,13 @@ define(['postmonger'], function (Postmonger) {
     function save() {
         payload['arguments'].execute.inArguments = [
             {
-                SAMPLE_PARAM: "SAMPLE PARAM DATA FROM CONFIG.JSON"
+                myInArgument: "SAMPLE PARAM DATA FROM CONFIG.JSON"
             }
         ];
         payload['metaData'].isConfigured = true;
         connection.trigger('updateActivity', payload);
 
-        console.log("Made it to save: ", payload)
+        console.log("Made it to save: ", payload['arguments'])
     }
 
     /**
@@ -69,6 +69,7 @@ define(['postmonger'], function (Postmonger) {
      * e.g. input fields, select lists
      */
     function initialLoad(data) {
+        console.log(data)
     };
 
 
