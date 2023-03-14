@@ -10,7 +10,7 @@ define(['postmonger'], function (Postmonger) {
     let lastnameSchema = ''; // variable is used in parseEventSchema()
     let eventDefinitionKey;
 
-    $(window).ready(onRender);
+    onRender();
     connection.on('initActivity', initialize);
     connection.on('clickedNext', save); //Save function within MC
 
