@@ -1,5 +1,5 @@
 {
-    "workflowApiVersion": "1.1",
+    "workflowApiVersion": "1.2",
     "metaData":
     {
         "icon": "images/icon.png",
@@ -12,7 +12,7 @@
     {
         "en-US":
         {
-            "name": "THE NAME GOES HERE",
+            "name": "I Updated the Name",
             "description": "<DESC_OF_APP>",
             "step1Label": "Configure Activity"
         }
@@ -38,7 +38,7 @@
     
     "configurationArguments":
     {
-
+        "applicationExtensionKey": "931aa261-bdee-4c0d-b656-b2ba88210f93",
         "save":
         {
             "url": "https://custom-jb-activity-ec.herokuapp.com/journeybuilder/save",

@@ -55,6 +55,7 @@ function logData(req) {
  * POST Handler for / route of Activity (this is the edit route).
  */
 exports.edit = function (req, res) {
+    console.log('MADE IT TO EDIT')
     // Data from the req and put it in an array accessible to the main app.
     //console.log( req.body );
     logData(req);
