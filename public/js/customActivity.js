@@ -56,7 +56,7 @@ define(['postmonger'], function (Postmonger) {
         payload['metaData'].isConfigured = true;
         connection.trigger('updateActivity', payload);
 
-        console.log("Made it to save: ", payload['arguments'])
+        console.log("Made it to save: ", payload['arguments'].execute.inArguments)
     }
 
     /**
