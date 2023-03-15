@@ -12,8 +12,8 @@
     {
         "en-US":
         {
-            "name": "I Updated the Name",
-            "description": "<DESC_OF_APP>",
+            "name": "Hello World Journey Activity",
+            "description": "Testing a custom journey builder activity.",
             "step1Label": "Configure Activity"
         }
     },
@@ -27,7 +27,7 @@
             "outArguments": [],
             "url": "https://custom-jb-activity-ec.herokuapp.com/journeybuilder/execute",
             "verb": "POST",
-            "body": "",
+            "body": "Hello_World_Body",
             "header": "",
             "format": "json",
             "useJwt": true,

@@ -20,7 +20,7 @@ define(['postmonger'], function (Postmonger) {
         connection.trigger('requestTokens');
         connection.trigger('requestEndpoints');
 
-        console.log('On Render is called')
+        console.log('On Render is complete')
     }
 
     /**
@@ -31,11 +31,12 @@ define(['postmonger'], function (Postmonger) {
     connection.on('requestedTriggerEventDefinition', function (eventDefinitionModel) {
         if (eventDefinitionModel) {
             eventDefinitionKey = eventDefinitionModel.eventDefinitionKey;
-            // console.log('Request Trigger >>>', JSON.stringify(eventDefinitionModel));
+            console.log('Request Trigger >>>', JSON.stringify(eventDefinitionModel));
         }
     });
 
     function initialize(data) {
+        console.log('Data initialized >>>>>> ', JSON.stringify(data))
         if (data) {
             payload = data;
         }
