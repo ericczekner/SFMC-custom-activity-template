@@ -30,7 +30,7 @@
             "url": "https://custom-jb-activity-ec.herokuapp.com/journeybuilder/execute",
             "body": "{email-body}",
             "header": "",
-            "useJwt": true,
+            "useJwt": false,
             "customerKey": "Hello_world",
             "timeout": 10000
         }
@@ -40,25 +40,25 @@
         "save": {
             "url": "https://custom-jb-activity-ec.herokuapp.com/journeybuilder/save",
             "verb": "POST",
-            "useJwt": true,
+            "useJwt": false,
             "customerKey": "Hello_world"
         },
         "publish": {
             "url": "https://custom-jb-activity-ec.herokuapp.com/journeybuilder/publish",
             "verb": "POST",
-            "useJwt": true,
+            "useJwt": false,
             "customerKey": "Hello_world"
         },
         "stop": {
             "url": "https://custom-jb-activity-ec.herokuapp.com/journeybuilder/stop",
             "verb": "POST",
-            "useJwt": true,
+            "useJwt": false,
             "customerKey": "Hello_world"
         },
         "validate": {
             "url": "https://custom-jb-activity-ec.herokuapp.com/journeybuilder/validate",
             "verb": "POST",
-            "useJwt": true,
+            "useJwt": false,
             "customerKey": "Hello_world"
         }
     },
