@@ -77,7 +77,7 @@ exports.save = function (req, res) {
             console.log('SUCCESSFUL DECODE > decoded ####=>', decoded);
            
         } else {
-            console.error('inArguments invalid. ', inArguments);
+            console.error('inArguments invalid. ', decoded.inArguments);
             
         }
     })
