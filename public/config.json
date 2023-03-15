@@ -1,13 +1,14 @@
 {
     "workflowApiVersion": "1.1",
     "metaData": {
-        "icon": "images/sms.png",
+        "icon": "images/icon.png",
+        "iconSmall": "images/iconSmall.png",
         "category": "message"
     },
     "type": "REST",
     "lang": {
         "en-US": {
-            "name": "REST Activity (Workflow API v1.1)",
+            "name": "Hello World Activity",
             "description": "An example REST activity using workflow API v1.1 format."
         }
     },
@@ -26,7 +27,12 @@
                     "foundSignupDate": ""
                 }
             ],
-            "url": "https://custom-jb-activity-ec.herokuapp.com/journeybuilder/execute"
+            "url": "https://custom-jb-activity-ec.herokuapp.com/journeybuilder/execute",
+            "body": "{email-body}",
+            "header": "",
+            "useJwt": true,
+            "customerKey": "Hello_world",
+            "timeout": 10000
         }
     },
     "configurationArguments": {
@@ -34,22 +40,26 @@
         "save": {
             "url": "https://custom-jb-activity-ec.herokuapp.com/journeybuilder/save",
             "verb": "POST",
-            "useJwt": true
+            "useJwt": true,
+            "customerKey": "Hello_world"
         },
         "publish": {
             "url": "https://custom-jb-activity-ec.herokuapp.com/journeybuilder/publish",
             "verb": "POST",
-            "useJwt": true
+            "useJwt": true,
+            "customerKey": "Hello_world"
         },
         "stop": {
             "url": "https://custom-jb-activity-ec.herokuapp.com/journeybuilder/stop",
             "verb": "POST",
-            "useJwt": true
+            "useJwt": true,
+            "customerKey": "Hello_world"
         },
         "validate": {
             "url": "https://custom-jb-activity-ec.herokuapp.com/journeybuilder/validate",
             "verb": "POST",
-            "useJwt": true
+            "useJwt": true,
+            "customerKey": "Hello_world"
         }
     },
     "wizardSteps": [
