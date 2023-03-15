@@ -68,6 +68,19 @@ exports.edit = function (req, res) {
 exports.save = function (req, res) {
     // Data from the req and put it in an array accessible to the main app.
     console.log('REQUEST BODY AS STRING >>>>>>> ', req.body.toString() );
+    console.log('JWT FROM ENV>>>>>> ', process.env.jwtSecret)
+    JWT(req.body.toString(), process.env.jwtSecret, (err, decoded) =>{
+        if(err){
+            console.log('ERROR WITH JWT>> ', err)
+        }
+        if (decoded && decoded.inArguments && decoded.inArguments.length > 0) {
+            console.log('SUCCESSFUL DECODE > decoded ####=>', decoded);
+           
+        } else {
+            console.error('inArguments invalid.');
+            
+        }
+    })
     logData(req);
     res.send(200, 'Save');
 };
